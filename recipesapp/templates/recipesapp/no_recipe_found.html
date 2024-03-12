@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block Title %} No recipe found {% endblock %}
+
+{% block Content %}
+<div>
+    <div class="container mt-5">
+        <div class="card text-center">
+            <div class="card-body">
+                <h1 class="card-title">Подходящий рецепт не найден</h1>
+                <p class="card-text">Нам не удалось найти подходящий рецепт</p>
+                <p class="card-text">Please try another search or explore our recipes.Пожалуйста, попробуйте другой поиск или ознакомьтесь с нашими рецептами.</p>
+                <div class="mt-3">
+                    <a href="javascript:history.back()" class="btn btn-secondary mr-2">Назад</a>
+                    <a href="{% url 'home' %}" class="btn btn-primary">Главная</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
